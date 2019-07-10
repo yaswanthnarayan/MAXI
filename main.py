@@ -7,5 +7,6 @@ for i in range(len(s)):
     for j in range(i+1,len(s)):
         if s[j] not in ol:
             ns+=s[j]
+            ol.append(s[j])
             l.append(len(ns))
 print(max(l))
